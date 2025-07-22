@@ -23,14 +23,14 @@ To use this module, you should have Terraform installed and configured for AWS. 
 ```hcl
 
 module "sns" {
-  source = "cypik/sns/aws"
-
+  source       = "cypik/sns/aws"
+  version      = "1.0.2"
   name         = local.name
   environment  = local.environment
   enable_topic = true
 
-  subscribers = {
-    newrelic = {
+  subscribers  = {
+    newrelic   = {
       protocol                        = "https"
       endpoint                        = "https://example.com"
       endpoint_auto_confirms          = false
@@ -94,9 +94,6 @@ This Terraform module is provided under the **MIT** License. Please see the [LIC
 ## Author
 Your Name
 Replace **MIT** and **Cypik** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
-
-<!-- BEGIN_TF_DOCS -->
-
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
