@@ -63,9 +63,9 @@ module "sns" {
     {
       Description = "Deny Inbound Address"
       Name        = "DenyInboundEmailAdressPolicy"
-      Statement = [
+      Statement   = [
         {
-          "DataDirection" = "Inbound"
+          "DataDirection"  = "Inbound"
           "DataIdentifier" = [
             "arn:aws:dataprotection::aws:data-identifier/EmailAddress",
           ]
@@ -75,10 +75,10 @@ module "sns" {
           "Principal" = [
             "*",
           ]
-          "Sid" = "DenyInboundEmailAddress"
+          "Sid"       = "DenyInboundEmailAddress"
         },
       ]
-      Version = "2021-06-01"
+      Version         = "2021-06-01"
     }
   )
 }
