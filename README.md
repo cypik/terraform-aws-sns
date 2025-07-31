@@ -24,7 +24,7 @@ To use this module, you should have Terraform installed and configured for AWS. 
 
 module "sns" {
   source       = "cypik/sns/aws"
-  version      = "1.0.2"
+  version      = "1.0.0"
   name         = local.name
   environment  = local.environment
   enable_topic = true
