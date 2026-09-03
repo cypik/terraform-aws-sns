@@ -1,8 +1,8 @@
 data "aws_caller_identity" "current" {}
 
 module "labels" {
-  source      = "Cypik/labels/aws"
-  version     = "1.0.2"
+  source      = "cypik/labels/aws"
+  version     = "1.0.3"
   name        = var.name
   repository  = var.repository
   environment = var.environment
